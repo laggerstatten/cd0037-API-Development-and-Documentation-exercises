@@ -6,11 +6,12 @@ The instructions below are meant for the local setup only. The classroom workspa
 
 
 * **Start your virtual environment** 
+
 From the backend folder run
 ```bash
 # Windows users
-> py -3 -m venv venv
-> venv\Scripts\activate
+py -3.7 -m venv venv
+source venv/Scripts/activate
 ```
 
 * **Install dependencies**<br>
@@ -30,9 +31,9 @@ Windows users can follow the commands below:
 - Then, in the command line, execute the folllowing command: 
 ```bash
 # Start the server
-pg_ctl -D "C:\Program Files\PostgreSQL\13.2\data" start
+pg_ctl -D "C:\Program Files\PostgreSQL\14\data" start
 # Stop the server
-pg_ctl -D "C:\Program Files\PostgreSQL\13.2\data" stop
+pg_ctl -D "C:\Program Files\PostgreSQL\14\data" stop
 ```
 If it shows that the *port already occupied* error, run:
 ```bash
@@ -46,9 +47,9 @@ kill <PID>
 Verify that the database user in the `/backend/books.psql`, `/backend/models.py`, and `/backend/test_flaskr.py` files must be either the `student` or `postgres` (default username). FYI, the classroom workspace uses the `student`/`student` user credentials, whereas, the local implementation can use the dafault `postgres` user without a password as well. (See the `/backend/setup.sql` for more details!)
 
 2. **Create the database and a user**<br>
-In your terminal, navigate to the */nd0044-c2-API-Development-and-Documentation-exercises/1_Requests_Starter/backend/* directory, and run the following:
+In your terminal, navigate to the */6_Final_Review/backend/* directory, and run the following:
 ```bash
-cd nd0044-c2-API-Development-and-Documentation-exercises/1_Requests_Starter/backend
+cd /6_Final_Review/backend
 # Connect to the PostgreSQL
 psql postgres
 #View all databases
@@ -89,12 +90,19 @@ The application will run on `http://127.0.0.1:5000/` by default and is set as a 
 
 ### Step 3: Start the frontend
 (You can start the frontend even before the backend is up!)
+
+cd 6_Final_Review
+cd frontend
+
 From the `frontend` folder, run the following commands to start the client: 
 ```
 npm install // only once to install dependencies
 npm start 
 ```
 By default, the frontend will run on `localhost:3000`. Close the terminal if you wish to stop the frontend server. 
+
+
+
 
 ---
 
