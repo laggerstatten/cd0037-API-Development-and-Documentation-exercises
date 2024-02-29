@@ -38,6 +38,10 @@ The application is run on `http://127.0.0.1:5000/` by default and is a proxy in 
 #### Frontend
 
 From the frontend folder, run the following commands to start the client: 
+
+cd 6_Final_Review
+cd frontend
+
 ```
 npm install // only once to install dependencies
 npm start 

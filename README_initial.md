@@ -8,9 +8,6 @@ The instructions below are meant for the local setup only. The classroom workspa
 * **Start your virtual environment** 
 From the backend folder run
 ```bash
-# Mac users
-python3 -m venv venv
-source venv/bin/activate
 # Windows users
 > py -3 -m venv venv
 > venv\Scripts\activate
@@ -27,14 +24,7 @@ pip3 uninstall flask-socketio -y
 
 
 ### Step 0: Start/Stop the PostgreSQL server
-Mac users can follow the commands below:
-```bash
-which postgres
-postgres --version
-# Start/stop
-pg_ctl -D /usr/local/var/postgres start
-pg_ctl -D /usr/local/var/postgres stop 
-```
+
 Windows users can follow the commands below:
 - Find the database directory, it should be something like that: *C:\Program Files\PostgreSQL\13.2\data*
 - Then, in the command line, execute the folllowing command: 
